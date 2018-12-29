@@ -8,7 +8,7 @@ import digitalio
 
 # neopixel strip setup
 pixel_pin = board.D9
-num_pixels = 8   # how many pixels do you have
+num_pixels = 90
 pixels = neopixel.NeoPixel(pixel_pin, num_pixels, auto_write=False)
 
 # setup PIR sensor
