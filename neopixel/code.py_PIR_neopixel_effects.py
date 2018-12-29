@@ -1,17 +1,18 @@
 # itsybitsy M4 motion activated lights for stairs.
 # acidic.io Dec 2019
+# most PIR code is ladyada's from adafruit.
 import time
 import board
 import neopixel
 import digitalio
 
 # neopixel strip setup
-pixel_pin = board.D11
+pixel_pin = board.D9
 num_pixels = 8   # how many pixels do you have
 pixels = neopixel.NeoPixel(pixel_pin, num_pixels, auto_write=False)
 
 # setup PIR sensor
-pir_pin = board.D9
+pir_pin = board.D11
 pir = digitalio.DigitalInOut(pir_pin)
 pir.direction = digitalio.Direction.INPUT
 
