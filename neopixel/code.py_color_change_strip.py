@@ -1,9 +1,6 @@
-#  acidic.io , dec 2018
-#  this is running on my christmas tree :-)
-#  This is some code to make a neopixel strip 5m reel
-#  do a 'breathe' effect use different colors each 'breath'
-#  this done by increasing brightness, pause, decreasing brightness
-#  scan line code is included for more fun, but not used on my XMAS tree
+# 5M Reel of neopixel, 30 per M spacing.
+# Xmas Tree strip effects.
+# acidic.io Dec2019
 
 import time
 import board
@@ -43,7 +40,7 @@ def scanline(wait):
      #    time.sleep(0.0001)
 
 
-# this will begin at 0.1 and increase to 0.70
+# this will begin at 0.1 and increase to 0.50
 def fade_up(wait, color):
     pixels.fill(color)
     b = 0.03
